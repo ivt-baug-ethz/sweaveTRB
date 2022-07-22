@@ -1,0 +1,55 @@
+%
+% Transportation Research Board conference paper template
+% version 3.1
+% 
+% When numbered option is activated, lines are numbered.
+\documentclass[numbered]{trbunofficial}
+\usepackage{graphicx}
+
+% \usepackage[colorlinks=true,linkcolor=blue,citecolor=blue]{hyperref}
+% For TRB version hide links
+\usepackage[hidelinks]{hyperref}
+
+% Put here what will go to headers as author
+\AuthorHeaders{Pritchard, Macfarlane, and Wang}
+\title{A \LaTeX\ Template for Papers Submitted to the Transportation
+Research Board}
+
+% TODO: add macros for easier formatting of \author.
+\author{%
+  \textbf{David Pritchard}\\
+  davidpritchard.org\\
+  \hfill\break% this is a way to add line numbering on empty line
+  \textbf{Gregory S. Macfarlane, Ph.D.}\\
+  \hfill\break%
+  \textbf{Chieh (Ross) Wang, Ph.D.}\\
+  cw@crosswang.org
+}
+
+% If necessary modify the number of words per table or figure default is set to
+% 250 words per table and figure
+% \WordsPerTable{250}
+% \WordsPerFigure{250}
+
+% If words are counted manually, put that number here. This does not include
+% figures and tables. This can also be used to avoid problems with texcount
+% program i.e. if one does not have it installed.
+% \TotalWords{200}
+
+% \usepackage{Sweave}
+\begin{document}
+\maketitle
+% \SweaveOpts{concordance=TRUE}
+% \input{trb_template_knitr-concordance}
+	
+
+<<child="Example.Rnw">>=
+@
+
+
+
+\newpage
+
+\bibliographystyle{trb}
+\bibliography{trb_template}
+\end{document}
